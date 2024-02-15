@@ -28,8 +28,8 @@ function smtp_mailer($to,$subject, $msg){
 	$mail->IsHTML(true);
 	$mail->CharSet = 'UTF-8';
 	$mail->Username = "username@gmail.com";    // Change it to yours email address
-        $mail->Password = "password"; 	
-        $mail->SetFrom("username@gmail.com");   // App Password, (16 character Key)
+        $mail->Password = "password"; 	           // App Password, (16 character Key)
+        $mail->SetFrom("username@gmail.com");   
 	$mail->Subject = $subject;
 	$mail->Body =$msg;
 	$mail->AddAddress($to);
@@ -45,7 +45,7 @@ function smtp_mailer($to,$subject, $msg){
 
 1. Clone the repository to your local machine.
 ```bash
-git clone https://github.com/vaishnavid0604/agriculture-portal.git
+git clone https://github.com/Nandha2536/agriculture-portal.git
 ```
 2. Goto Farmers folder and Install the required packages using pip.
 ```
@@ -133,23 +133,7 @@ The Crop Management System dataset includes the following features:
 ### Rainfall Prediction Dataset
 - SUBDIVISION
 - YEAR
-- JAN
-- FEB
-- MAR
-- APR
-- MAY
-- JUN
-- JUL
-- AUG
-- SEP
-- OCT
-- NOV
-- DEC
-- ANNUAL
-- Jan-Feb
-- Mar-May
-- Jun-Sep
-- Oct-Dec
+- MONTH
 
 ### Yield Prediction Dataset
 - State_Name
